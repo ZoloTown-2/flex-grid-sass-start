@@ -8,6 +8,7 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 140%;
+  box-sizing: border-box;
 }
 
 /* This styles the body to not have any default margin or padding. */
@@ -26,6 +27,7 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
+  height: 125px;
   background-color: #000096;
   padding: 1rem;
 }
@@ -36,8 +38,14 @@ nav {
 */
 nav ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 /* 
@@ -45,7 +53,9 @@ nav ul {
   to be inline-block elements.
 */
 nav ul li {
-  display: inline-block;
+  float: left;
+  width: 15%;
+  flex: 1 0 215px;
 }
 
 /*
@@ -61,9 +71,11 @@ nav ul li {
 nav ul li a {
   display: inline-block;
 
-  padding: 0.2rem 1rem;
+  border-right: 3px solid #121212;
+  padding: 0.75rem 1rem;
+  width: 100%;
 
-  color: ghostwhite;
+  color: #ededed;
   text-decoration: none;
   text-align: center;
   font-weight: bolder;
@@ -77,7 +89,7 @@ nav ul li a {
   to black when the user hovers or focuses on the link.
 */
 nav ul li a:hover, nav ul li a:focus {
-  background-color: black;
+  background-color: #121212;
 }
 
 /* 
@@ -111,4 +123,12 @@ header h1 {
 */
 main header {
   margin: 0;
+}
+
+#active {
+  color: #94fad0;
+}
+
+#contact {
+  border: 0;
 }
