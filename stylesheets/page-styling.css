@@ -27,7 +27,7 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
-  height: 125px;
+  display: flex;
   background-color: #000096;
   padding: 1rem;
 }
@@ -127,8 +127,4 @@ main header {
 
 #active {
   color: #94fad0;
-}
-
-#contact {
-  border: 0;
 }

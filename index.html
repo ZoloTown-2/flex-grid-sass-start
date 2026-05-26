@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="stylesheets/page-styling.css" />
     <style>
       /* Styles the image on this page to be 40% of the width of the page. */
-      img {
-        width: 40%;
+      section img {
+        width: 100%;
       }
       section {
         display: flex;
@@ -17,11 +17,15 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        column-gap: 4rem; /* Instead of gap: 0 4rem; */
       }
       section div {
-        margin-left: 4rem;
+        width: 30%;
         flex: 1 0 400px;
+      }
+      @media (min-width: 700px) {
+        section img {
+          width: 50%;
+        }
       }
     </style>
   </head>
